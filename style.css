@@ -1,0 +1,66 @@
+body {           
+    background-color: rgb(230, 230, 230);
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@keyframes example {
+    from {background-color: white;}
+    to {background-colorrgb(230, 230, 230);}
+}
+
+#form { 
+    width: 45em;
+    box-shadow: 0 0 10px gray;
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+
+.avatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #4b9c98 ;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    margin-top: 10em;
+}
+
+.fa{
+    color: #808080 !important;
+}
+
+#btnSubmit{
+    background: #45918d !important;
+    font-weight: 600 !important; 
+    font-size: 1.1rem !important; 
+    border: none !important; 
+}
+#btnSubmit:hover{
+    background:  #60c7c1 !important;
+}
+.fa-folder:before {  
+    font-size: 4.5em;
+    line-height: 1.1;
+}
